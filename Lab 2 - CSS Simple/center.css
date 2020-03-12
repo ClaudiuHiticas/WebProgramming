@@ -1,0 +1,45 @@
+body
+{
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container
+{
+    border-radius: 30px;
+    width: 20%;
+    height: 300px;
+    margin: auto;
+    background-color: green;
+    position: relative;
+    padding: 10px;
+}
+
+.container:hover
+{
+    border-radius: 0px;
+}
+
+ul 
+{
+    font-size: 40px;
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    background-color:aliceblue;
+}
+
+li:hover
+{
+    /* background-color: green; */
+    color: black;
+    font-size: 60px;
+}
+
+.blur 
+{
+	color: transparent;
+	text-shadow: 0 0 8px #000;
+ }

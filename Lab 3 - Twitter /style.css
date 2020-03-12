@@ -1,0 +1,11 @@
+body{
+    background: rgb(21, 32, 43);
+    width: 20%;
+    height: 20%;
+}
+
+.left{
+    color: white;
+    list-style-type: none;
+    font-size: 40px;
+}
