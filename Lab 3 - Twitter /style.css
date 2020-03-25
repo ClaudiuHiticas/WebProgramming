@@ -17,6 +17,7 @@ body{
     width: 24%;
     float: left; 
     left: 5%;
+    margin: 30px;
     /* position:sticky; top:0; */
 }
 
@@ -24,8 +25,8 @@ body{
     border-left: 1px solid gray;
     height: 1000px;
     position: absolute;
-    left: 80%;
-    /* margin-left: -3px; */
+    left: 70%;
+    margin-left: 5px;
     top: 0;
 }
 .column-right .vl{
@@ -49,20 +50,22 @@ body{
     border-radius: 22px;
 }
 
+
+
 .column-center div.topbar{
     position:-webkit-sticky; 
     position:sticky; 
     top:0;
     background-color: rgb(21, 32, 43);
+    width: 108%;
+    vertical-align: baseline;
 }
 
-.column-right div.topbar{
-    /* position: -webkit-sticky; */
-    /* position: sticky; */
-    position: fixed;
-    top: 0;
-    background-color:  rgb(21, 32, 43);
+.column-center div.topbar img{
+    /* margin-top: 100px */
+    /* position: absolute; */
 }
+
 
 
 .column-center{ 
@@ -82,7 +85,7 @@ body{
     border-radius: 50%;
     border: 5px solid rgb(21, 32, 43);
     margin-left: 10px;
-    margin-top: 110px;
+    margin-top: 130px;
     height: 150px;
     width: 150px;
     z-index: -1;
@@ -164,15 +167,29 @@ body{
     z-index: -1;
 }
 
+
+.column-right div.topbar{
+    position: fixed;
+    top: 0;
+    background-color:  rgb(21, 32, 43);
+    z-index: 100;
+    width: 28%;
+    margin-left: 10px;
+    /* background-color: red; */
+}
+
+
 .column-right .topbar input{
+    color: white;
+    margin-top: 20px;
     width: 270px;
     margin-left: 20px;
+    padding: 20px;
     border-radius: 35px;
     font-size: 14px;
     background-color: rgb(37,51,65);
     padding: 12px 20px 12px 40px;
     border: 1px solid gray;
-    color: white;
     z-index: 100;
     
 }
@@ -183,8 +200,9 @@ body{
     grid-template-columns: 110px 110px 110px;
     grid-gap: 1px;
     border-radius: 5px;
-    margin: 50px 20px;
-
+    margin-top: 70px;
+    margin-left: 32px;
+    margin-bottom: 20px;
 }
 
 .column-right .a img{
@@ -204,10 +222,13 @@ body{
 }
 
 .column-right .middle{
-    margin-left: 15px;
+    margin-left: 35px;
+    padding: 10px;
     background-color: rgb(25,39,52);
     border-radius: 25px;
-    
+    z-index: -10;
+    width: 315px;
+    height: 250px;
 }
 
 .column-right .middle img{
@@ -216,35 +237,65 @@ body{
     z-index: -1;
 }
 
+.column-right .middle .line{
+    position: absolute;
+    border: 0.3px solid gray;
+    width: 333px;
+    margin-left: -10px;
+}
+
+.column-right .middle .hr2{
+    margin-top: -109px;
+}
+
+.column-right .middle .hr3{
+    margin-top: -80px;
+}
+
+
 .column-right .middle span span button{
     color: rgb(58,161,242);
     position: relative;
     top: -55px;
-    margin-left: 300px;
+    margin-left: 210px;
     background-color: transparent;
     font-size: 15px;
     border-radius: 22px;
     border-color: rgb(58,161,242);
     padding: 10px;
     width: 90px;
-
 }
+
 
 .column-right .trands{
     position: relative; 
-    top:100px;
-    font-size: 20px; 
     font-weight: bold;
-    margin-left: 25px ;
+    top: 20px;
+    margin-left: 35px ;
+    width: 315px;
     background-color: rgb(25,39,52);
     padding: 10px;
-    border-radius: 16px;
+    border-radius: 20px;
     z-index: -1;
 }
 
-.column-right .down{
-    margin-left: 25px;
-    word-spacing: 15px;
-    font-size: 14px;
+.column-right .trands p{
     color: rgb(136,153,166);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.column-right .trands hr{
+    border: 0.3px solid gray;
+    margin-left: -10px;
+    width: 333px;
+}
+
+.column-right .down{
+    margin-left: 35px;
+    word-spacing: 15px;
+    font-size: 12px;
+    color: rgb(136,153,166);
+    margin-top: 50px;
+    width: 330px;
 }
