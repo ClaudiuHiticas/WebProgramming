@@ -22,7 +22,7 @@ body{
 }
 
 .column-left .vl{
-    border-left: 1px solid gray;
+    border-left: 0.8px solid gray;
     height: 955px;
     position: absolute;
     left: 70%;
@@ -71,7 +71,7 @@ body{
     position:sticky; 
     top:0;
     background-color: rgb(21, 32, 43);
-    width: 108%;
+    width: 106.8%;
     vertical-align: baseline;
     z-index: 100;
 }
@@ -190,7 +190,7 @@ body{
     background-color:  rgb(21, 32, 43);
     z-index: 100;
     width: 28%;
-    margin-left: 10px;
+    margin-left: 11px;
     /* background-color: red; */
 }
 
