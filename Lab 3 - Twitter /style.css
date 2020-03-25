@@ -23,17 +23,31 @@ body{
 
 .column-left .vl{
     border-left: 1px solid gray;
-    height: 1000px;
+    height: 955px;
     position: absolute;
     left: 70%;
     margin-left: 5px;
     top: 0;
+    margin-top: -20px;
 }
 .column-right .vl{
     border-right: 0.8px solid gray;
-    height: 1400px;
+    height: 1330px;
     position: absolute;
     top: 0;
+}
+
+.column-left div img{
+    position: absolute;
+    margin-top:5px;
+}
+
+.column-left div{
+    margin-top: -13px;
+}
+
+.column-left div p{
+    margin-left: 50px;
 }
 
 .column-left button{
@@ -61,11 +75,10 @@ body{
     vertical-align: baseline;
 }
 
-.column-center div.topbar img{
-    /* margin-top: 100px */
-    /* position: absolute; */
+.column-center .row{
+    /* margin-top: -20px; */
+    background-color: red;
 }
-
 
 
 .column-center{ 
@@ -94,6 +107,7 @@ body{
 
 
 .column-center button{
+    position: absolute;
     margin-left: 550px;
     color: rgb(58,161,242);
     background-color: transparent;
@@ -102,6 +116,7 @@ body{
     border-color: rgb(58,161,242);
     padding: 10px;
     width: 90px;
+    margin-top: -50px;
 }
 
 .column-center .line{
@@ -289,6 +304,11 @@ body{
     border: 0.3px solid gray;
     margin-left: -10px;
     width: 333px;
+}
+
+.column-right .trands .arrow{
+    position: absolute;
+    margin: -30px 288px;
 }
 
 .column-right .down{
