@@ -73,6 +73,7 @@ body{
     background-color: rgb(21, 32, 43);
     width: 108%;
     vertical-align: baseline;
+    z-index: 100;
 }
 
 .column-center .row{
