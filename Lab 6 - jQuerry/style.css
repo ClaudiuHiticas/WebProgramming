@@ -1,0 +1,62 @@
+body, html{
+    background: black;
+}
+
+.click{
+    size: 20px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+div .title{
+    font-size: 25px;
+    color: gray;
+}
+
+div .x{
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+
+#element{
+    background: white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+
+
+#element .resizers .resizer{
+
+    background: white;
+    border: 3px solid black;
+    position: absolute;
+}
+
+#element .resizers .resizer.top-left {
+    left: -5px;
+    top: -5px;
+    cursor: nwse-resize; /*resizer cursor*/
+}
+#element .resizers .resizer.top-right {
+    right: -5px;
+    top: -5px;
+    cursor: nesw-resize;
+}
+#element .resizers .resizer.bottom-left {
+    left: -5px;
+    bottom: -5px;
+    cursor: nesw-resize;
+}
+#element .resizers .resizer.bottom-right {
+    right: -5px;
+    bottom: -5px;
+    cursor: nwse-resize;
+}

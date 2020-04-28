@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- <script src="script.js"></script> -->
+    <title>Resizable</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <button class="click" onclick="hideMe()">show me</button>
+    <div id='element' visible='no'>
+        <span class="title">
+            Title of the dialog
+            <button class="x" onclick="hideMe()">x</button>
+        </span>
+        <br><br>
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare neque sit amet diam accumsan bibendum. Donec justo ipsum, dignissim vel auctor sed, ultrices ac felis. Cras varius diam id nulla consequat, sit amet rhoncus libero euismod. Donec quis eros ut felis hendrerit congue. Etiam mollis pretium erat, eget ullamcorper elit pharetra ut. Donec vel eros eget nunc lobortis ultricies. Donec nisi mi, mattis id ligula sed, aliquet ultricies tellus. In faucibus, leo eu aliquet volutpat, metus ipsum rutrum lorem, eu laoreet enim mi at elit.
+        </span>
+        <div class = 'resizers'>
+            
+            <div class='resizer top-left'></div>
+            <div class='resizer top-right'></div>
+            <div class='resizer bottom-left'></div>
+            <div class='resizer bottom-right'></div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#element").hide();
+        
+    })
+</script>
+
+
+</html>
+</html>
