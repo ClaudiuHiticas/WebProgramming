@@ -50,39 +50,47 @@
             let x = $("#x_position").val();
             let y = $("#y_position").val();
             let orientation = $("#orientation").val();
-            $.post("/PlayController?x=" + x + "&y=" + y + "&orientation=" + orientation, function (response) {
-                if (response["response"] === "success") {
-                    let nextX = [-1, 0, 1, 0];
-                    let nextY = [0, -1, 0, 1];
-                    let or = parseInt(orientation);
-                    let currentX = parseInt(x);
-                    let currentY = parseInt(y);
+            if(!$.isNumeric(x) || !$.isNumeric(y) || !$.isNumeric(orientation)) {
+                alert("Values must be integers!")
+            } else {
+                $.post("/PlayController?x=" + x + "&y=" + y + "&orientation=" + orientation, function (response) {
+                    if (response["response"] === "success") {
+                        let nextX = [-1, 0, 1, 0];
+                        let nextY = [0, -1, 0, 1];
+                        let or = parseInt(orientation);
+                        let currentX = parseInt(x);
+                        let currentY = parseInt(y);
 
-                    for (let i = 0; i < 3; ++i) {
-                        $("#id_" + (currentX * 6 + currentY)).css("background-color", "green");
-                        currentX += nextX[or];
-                        currentY += nextY[or];
+                        for (let i = 0; i < 3; ++i) {
+                            $("#id_" + (currentX * 6 + currentY)).css("background-color", "green");
+                            currentX += nextX[or];
+                            currentY += nextY[or];
+                        }
+                        $("#x_position").val("");
+                        $("#y_position").val("");
+                        $("#orientation").val("");
+                    } else {
+                        alert(response["response"]);
                     }
-                    $("#x_position").val("");
-                    $("#y_position").val("");
-                    $("#orientation").val("");
-                } else {
-                    alert(response["response"]);
-                }
-            });
+                });
+            }
         });
         $("#submit_attack").click(function() {
             let x = $("#x_attack").val();
             let y = $("#y_attack").val();
-            $.post("/PlayController?x=" + x + "&y=" + y, function (response) {
-                if (response["response"] === "success") {
-                    $("#x_attack").val("");
-                    $("#y_attack").val("");
-                } else {
-                    alert(response["response"]);
-                }
+            if(!$.isNumeric(x) || !$.isNumeric(y)) {
+                alert("Values must be integers!")
+            } else {
+                $.post("/PlayController?x=" + x + "&y=" + y, function (response) {
+                    if (response["response"] === "success") {
+                        $("#x_attack").val("");
+                        $("#y_attack").val("");
+                    } else {
+                        alert(response["response"]);
+                    }
 
-            });
+                });
+            }
         });
 
         let myFunction = function() {

@@ -18,13 +18,6 @@ public class Board {
         return this.board[x][y];
     }
 
-    public void setForPosition(Integer x, Integer y, Integer value) {
-        this.board[x][y] = value;
-    }
-
-
-
-
     public void addShip(Integer x, Integer y, Integer orientation) {
         int[] nextX = {-1, 0, 1, 0};
         int[] nextY = {0, -1, 0, 1};

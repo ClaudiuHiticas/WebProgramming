@@ -184,6 +184,14 @@ public class PlayController extends HttpServlet {
             Integer x = Integer.parseInt(request.getParameter("x"));
             Integer y = Integer.parseInt(request.getParameter("y"));
 
+            if(x < 0 || x > 5 || y < 0 || y > 5)
+            {
+                response.setContentType("application/json");
+                response.getWriter().print("{\"response\":\"X and y must be between 0 and 5\"}");
+                response.getWriter().flush();
+                return;
+            }
+
             if (otherUser.board.shipsAdded != 2) {
                 response.setContentType("application/json");
                 response.getWriter().print("{\"response\":\"Other player didn't select yet.\"}");
@@ -203,8 +211,6 @@ public class PlayController extends HttpServlet {
                 response.getWriter().flush();
                 return;
             }
-
-
 
             otherUser.board.attack(x, y);
             isFirstPlayer = !isFirstPlayer;

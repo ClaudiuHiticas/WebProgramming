@@ -15,7 +15,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
 public class LoginController extends HttpServlet {
 
     private int players;
@@ -76,20 +75,14 @@ public class LoginController extends HttpServlet {
 
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-
         User user = this.getUser(username);
-
         boolean isValid = false;
-
         if (user != null && user.getPassword().equals(password))
         {
             isValid = true;
         }
-
-        RequestDispatcher rd = null;
-
+        RequestDispatcher rd;
         if (isValid) {
-
             if (this.players < 2) {
                 this.players += 1;
                 HttpSession session = request.getSession();
@@ -100,11 +93,14 @@ public class LoginController extends HttpServlet {
             } else {
                 rd = request.getRequestDispatcher("/error.jsp");
             }
-
         } else {
             rd = request.getRequestDispatcher("/loginFailed.jsp");
         }
         rd.forward(request, response);
     }
 
+    protected void doGet(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
+    }
 }
