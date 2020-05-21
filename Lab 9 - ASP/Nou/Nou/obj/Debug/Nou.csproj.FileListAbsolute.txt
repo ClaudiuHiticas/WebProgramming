@@ -1,0 +1,36 @@
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/Nou.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/Nou.pdb
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/BouncyCastle.Crypto.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/EntityFramework.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/EntityFramework.SqlServer.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/Google.Protobuf.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/MySql.Data.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/MySql.Data.Entity.EF6.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/Google.Protobuf.xml
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/MySql.Data.xml
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/EntityFramework.xml
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/EntityFramework.SqlServer.xml
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/bin/MySql.Data.Entity.EF6.xml
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/obj/Debug/Nou.csprojAssemblyReference.cache
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/obj/Debug/Nou.csproj.CoreCompileInputs.cache
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/obj/Debug/Nou.csproj.CopyComplete
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/obj/Debug/Nou.dll
+/Users/claudiuhiticas/Downloads/Programare-Web- (1)/Nou/Nou/obj/Debug/Nou.pdb
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/Nou.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/Nou.pdb
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/BouncyCastle.Crypto.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/EntityFramework.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/EntityFramework.SqlServer.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/Google.Protobuf.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/MySql.Data.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/MySql.Data.Entity.EF6.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/Google.Protobuf.xml
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/MySql.Data.xml
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/EntityFramework.xml
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/EntityFramework.SqlServer.xml
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/bin/MySql.Data.Entity.EF6.xml
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/obj/Debug/Nou.csprojAssemblyReference.cache
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/obj/Debug/Nou.csproj.CoreCompileInputs.cache
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/obj/Debug/Nou.csproj.CopyComplete
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/obj/Debug/Nou.dll
+/Users/claudiuhiticas/Desktop/University/Web/WebProgramming/Lab 9 - ASP/Nou/Nou/obj/Debug/Nou.pdb
