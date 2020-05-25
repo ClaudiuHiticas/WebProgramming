@@ -10,7 +10,6 @@ namespace Nou
     public partial class home : System.Web.UI.Page
     {
         MySqlConnection con = new MySqlConnection(@"Data Source=localhost;port=3306;Initial Catalog=web;User Id=root;password=''");
-
         String table;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -43,7 +42,7 @@ namespace Nou
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(dt);
             table = "";
-            table += "<table border='1'>";
+            table += "<table class='table' border='1'>";
             table += "<tr><th>Id</th><th>Title</th><th>Type</th><th>Genre</th><th>Path</th></tr>";
             foreach (DataRow dr in dt.Rows)
             {
@@ -75,16 +74,48 @@ namespace Nou
             cmd.Parameters.AddWithValue("@genre", genreV);
             cmd.Parameters.AddWithValue("@path", pathV);
             string sql = "insert into `multimedia` (`title`, `type`, `genre`, `path`) values (@title, @type, @genre, @path)";
-
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
             type.Text = string.Empty;
             title.Text = string.Empty;
             genre.Text = string.Empty;
-            path.Text = string.Empty;
 
             con.Close();
             this.showFiles();
+        }
+
+        private Boolean existId(String id)
+        {
+            MySqlCommand cmd = new MySqlCommand("Select Count(*)  from multimedia where id ='" + id + "'", con);
+            MySqlDataReader sReader = null;
+            Int32 numberOfRows = 0;
+            try
+            {
+                con.Open();
+                sReader = cmd.ExecuteReader();
+
+                while (sReader.Read())
+                {
+                    if (!(sReader.IsDBNull(0)))
+                    {
+                        numberOfRows = Convert.ToInt32(sReader[0]);
+                        if (numberOfRows > 0)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return false;
         }
 
         protected void editFileFunc(object sneder, EventArgs e)
@@ -94,6 +125,14 @@ namespace Nou
             String typeV = etype.Text;
             String genreV = egenre.Text;
             String pathV = epath.Text;
+
+            if (!existId(idV))
+            {
+                Response.Write("<script>alert('Id not exist')</script>");
+                fileID.Text = string.Empty;
+                return;
+            }
+
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -122,35 +161,85 @@ namespace Nou
         protected void deleteFileFunc(object sneder, EventArgs e)
         {
             String fileIdV = fileID.Text;
-            con.Open();
-            MySqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from multimedia where id=" + fileIdV;
-            cmd.ExecuteNonQuery();
-            con.Close();
-            fileID.Text = string.Empty;
-            this.showFiles();
+            if(!existId(fileIdV))
+            {
+                Response.Write("<script>alert('Id not exist')</script>");
+                fileID.Text = string.Empty;
+                return;
+            }
+            else
+            {
+                con.Open();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "delete from multimedia where id=" + fileIdV;
+                cmd.ExecuteNonQuery();
+                con.Close();
+                fileID.Text = string.Empty;
+                this.showFiles();
+            }
+            
         }
 
-        protected void filterFunc(object sneder, EventArgs e)
+        private Boolean existGenre(String id)
         {
-            //Console.WriteLine("0");
-         
+            MySqlCommand cmd = new MySqlCommand("Select Count(*)  from multimedia where genre ='" + id + "'", con);
+            MySqlDataReader sReader = null;
+            Int32 numberOfRows = 0;
+            try
+            {
+                con.Open();
+                sReader = cmd.ExecuteReader();
+
+                while (sReader.Read())
+                {
+                    if (!(sReader.IsDBNull(0)))
+                    {
+                        numberOfRows = Convert.ToInt32(sReader[0]);
+                        if (numberOfRows > 0)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return false;
+        }
+
+
+        protected void filterFunc(object sneder, EventArgs e)
+        {         
             String genreFilterV = genreFilter.Text;
+
+            if (!existGenre(genreFilterV))
+            {
+                Response.Write("<script>alert('Genre not exist')</script>");
+             
+                fileID.Text = string.Empty;
+                return;
+            }
+
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@genreFilter", genreFilterV);
-            //Console.WriteLine("1")
             string sql = "SELECT * FROM multimedia WHERE genre=@genreFilter";
             cmd.CommandText = sql;
-            //Console.WriteLine("2");
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(dt);
             table = "";
-            table += "<table border='1'>";
+            table += "<table class='table' border='1'>";
             table += "<tr><th>Id</th><th>Title</th><th>Type</th><th>Genre</th><th>Path</th></tr>";
             foreach (DataRow dr in dt.Rows)
             {
@@ -165,14 +254,6 @@ namespace Nou
             placeholder2.Controls.Add(new LiteralControl { Text = table });
             con.Close();
 
-        }
-
-        private void hideAll()
-        {
-            addFile.Visible = false;
-            deleteFile.Visible = false;
-            editFile.Visible = false;
-            filterForm.Visible = false;
         }
         
 
