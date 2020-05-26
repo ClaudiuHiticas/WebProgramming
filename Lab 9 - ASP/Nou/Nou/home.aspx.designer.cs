@@ -48,5 +48,13 @@ namespace Nou {
 		protected System.Web.UI.WebControls.TextBox genreFilter;
 		
 		protected System.Web.UI.WebControls.PlaceHolder placeholder2;
+		
+		protected System.Web.UI.WebControls.FileUpload FileUpload1;
+		
+		protected System.Web.UI.WebControls.Label Label1;
+
+		protected System.Web.UI.WebControls.FileUpload FileUpload2;
+
+
 	}
 }

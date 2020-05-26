@@ -2,15 +2,15 @@
   <MonoDevelop.Ide.ItemProperties.Nou PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Nou/home.aspx">
     <Files>
-      <File FileName="Nou/home.aspx" Line="73" Column="27" />
-      <File FileName="Nou/home.aspx.cs" Line="228" Column="24" />
-      <File FileName="Nou/styleHome.css" Line="18" Column="2" />
-      <File FileName="Nou/Register.aspx" Line="18" Column="43" />
-      <File FileName="Nou/Register.aspx.cs" Line="45" Column="10" />
-      <File FileName="Nou/Register.aspx.designer.cs" Line="1" Column="1" />
-      <File FileName="Nou/home.aspx.designer.cs" Line="32" Column="53" />
-      <File FileName="Nou/style.css" Line="12" Column="22" />
-      <File FileName="Nou/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="Nou/home.aspx" Line="109" Column="22" />
+      <File FileName="Nou/home.aspx.cs" />
+      <File FileName="Nou/styleHome.css" />
+      <File FileName="Nou/Register.aspx" />
+      <File FileName="Nou/Register.aspx.cs" />
+      <File FileName="Nou/Register.aspx.designer.cs" />
+      <File FileName="Nou/home.aspx.designer.cs" />
+      <File FileName="Nou/style.css" />
+      <File FileName="Nou/Global.asax.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,11 +23,6 @@
               <Node name="Register.aspx" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Nou" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

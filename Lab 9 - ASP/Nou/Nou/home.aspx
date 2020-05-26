@@ -10,7 +10,6 @@
 	<form id="form1" runat="server">
             <asp:Button CssClass="logout" runat="server" Text="Logout" OnClick="LogoutClick"></asp:Button><br>
             <asp:Button CssClass="button" runat="server" Text="Show all files" OnClick="LoadTabData"></asp:Button>
-         
             <asp:PlaceHolder id="placeholder1" runat="server"></asp:PlaceHolder>
          
 	</form>
@@ -32,10 +31,14 @@
                         <td><asp:TextBox id="genre" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
-                        <td>Enter path</td>
-                        <td><asp:TextBox id="path" runat="server"></asp:TextBox></td>
+                        <td>Path</td>
+                        <td><asp:TextBox id="path" runat="server" ReadOnly="true"></asp:TextBox></td>
                     </tr>
-                 
+                    <tr>
+                        <td><asp:FileUpload ID="FileUpload1" runat="server" /></td>
+                        <td><asp:Button ID="Button1" runat="server" Text="Upload" OnClick="Button1_Click"/></td>
+                        
+                    </tr>
                     <tr>
                         <td colspan="2" align="center">
                             <asp:Button CssClass="button" runat="server" Text="Add File" OnClick="addFileFunc"></asp:Button>
@@ -56,7 +59,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
-                        <asp:Button CssClass="button" runat="server" Text="Delete File" OnClick="deleteFileFunc"></asp:Button>
+                        <asp:Button CssClass="button" runat="server" Text="Delete File" OnClick="deleteFileFunc" onclientclick="return confirm('Are you sure you want to delete this file?');"/></asp:Button>
                     </td>
                 </tr>
             </table>        
@@ -84,9 +87,14 @@
                         <td><asp:TextBox id="egenre" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
-                        <td>Enter path</td>
-                        <td><asp:TextBox id="epath" runat="server"></asp:TextBox></td>
+                        <td>Path</td>
+                        <td><asp:TextBox id="epath" runat="server" ReadOnly="true"></asp:TextBox></td>
                     </tr>
+                     <tr>
+                        <td><asp:FileUpload ID="FileUpload2" runat="server" /></td>
+                        <td><asp:Button ID="Button2" runat="server" Text="Upload" OnClick="Button2_Click"/></td>
+                        
+                    </tr> 
                     <tr>
                         <td colspan="2" align="center">
                             <asp:Button CssClass="button" runat="server" Text="Edit File" OnClick="editFileFunc"></asp:Button>

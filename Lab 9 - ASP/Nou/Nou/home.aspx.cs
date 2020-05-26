@@ -60,6 +60,16 @@ namespace Nou
 
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            path.Text = Server.MapPath(FileUpload1.FileName);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            epath.Text = Server.MapPath(FileUpload2.FileName);
+        }
+
         protected void addFileFunc(object sneder, EventArgs e)
         {
             String titleV = title.Text;
@@ -157,9 +167,9 @@ namespace Nou
             this.showFiles();
         }
 
-
         protected void deleteFileFunc(object sneder, EventArgs e)
         {
+
             String fileIdV = fileID.Text;
             if(!existId(fileIdV))
             {
