@@ -89,6 +89,8 @@ namespace Nou
             type.Text = string.Empty;
             title.Text = string.Empty;
             genre.Text = string.Empty;
+            path.Text = string.Empty;
+
 
             con.Close();
             this.showFiles();

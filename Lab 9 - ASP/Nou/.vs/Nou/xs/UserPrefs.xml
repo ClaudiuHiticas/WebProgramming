@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{B6A29E6A-0B30-4346-898A-D1B42BE52099}|">
   <MonoDevelop.Ide.ItemProperties.Nou PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Nou/home.aspx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Nou/home.aspx.cs">
     <Files>
-      <File FileName="Nou/home.aspx" Line="109" Column="22" />
-      <File FileName="Nou/home.aspx.cs" />
-      <File FileName="Nou/styleHome.css" />
+      <File FileName="Nou/home.aspx" Line="128" Column="12" />
+      <File FileName="Nou/home.aspx.cs" Line="122" Column="14" />
+      <File FileName="Nou/styleHome.css" Line="18" Column="2" />
       <File FileName="Nou/Register.aspx" />
       <File FileName="Nou/Register.aspx.cs" />
       <File FileName="Nou/Register.aspx.designer.cs" />
-      <File FileName="Nou/home.aspx.designer.cs" />
+      <File FileName="Nou/home.aspx.designer.cs" Line="55" Column="1" />
       <File FileName="Nou/style.css" />
       <File FileName="Nou/Global.asax.cs" />
     </Files>
@@ -17,9 +17,12 @@
         <State name="__root__">
           <Node name="Nou" expanded="True">
             <Node name="Nou" expanded="True">
+              <Node name="Packages" expanded="True" />
               <Node name="Default.aspx" expanded="True" />
               <Node name="Global.asax" expanded="True" />
-              <Node name="home.aspx" expanded="True" selected="True" />
+              <Node name="home.aspx" expanded="True">
+                <Node name="home.aspx.cs" selected="True" />
+              </Node>
               <Node name="Register.aspx" expanded="True" />
             </Node>
           </Node>
