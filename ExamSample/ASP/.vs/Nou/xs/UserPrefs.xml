@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{B6A29E6A-0B30-4346-898A-D1B42BE52099}|">
+  <MonoDevelop.Ide.ItemProperties.Nou PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Nou/home.aspx.cs">
+    <Files>
+      <File FileName="Nou/home.aspx.cs" Line="66" Column="19" />
+      <File FileName="Nou/styleHome.css" />
+      <File FileName="Nou/home.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="Nou/home.aspx" Line="12" Column="97" />
+      <File FileName="Nou/Default.aspx" Line="31" Column="30" />
+      <File FileName="Nou/Default.aspx.cs" Line="32" Column="1" />
+      <File FileName="Nou/Global.asax" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Nou" expanded="True">
+            <Node name="Nou" expanded="True">
+              <Node name="Default.aspx" expanded="True" />
+              <Node name="Global.asax" expanded="True" />
+              <Node name="home.aspx" expanded="True">
+                <Node name="home.aspx.cs" selected="True" />
+              </Node>
+              <Node name="Register.aspx" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

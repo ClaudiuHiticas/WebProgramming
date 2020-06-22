@@ -1,32 +1,40 @@
 ﻿<Properties StartupConfiguration="{B6A29E6A-0B30-4346-898A-D1B42BE52099}|">
   <MonoDevelop.Ide.ItemProperties.Nou PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Nou/home.aspx.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Nou/home.aspx">
     <Files>
-      <File FileName="Nou/home.aspx" Line="128" Column="12" />
-      <File FileName="Nou/home.aspx.cs" Line="122" Column="14" />
-      <File FileName="Nou/styleHome.css" Line="18" Column="2" />
+      <File FileName="Nou/home.aspx" Line="33" Column="25" />
+      <File FileName="Nou/home.aspx.cs" Line="89" Column="38" />
+      <File FileName="Nou/styleHome.css" Line="1" Column="1" />
       <File FileName="Nou/Register.aspx" />
       <File FileName="Nou/Register.aspx.cs" />
       <File FileName="Nou/Register.aspx.designer.cs" />
-      <File FileName="Nou/home.aspx.designer.cs" Line="55" Column="1" />
-      <File FileName="Nou/style.css" />
-      <File FileName="Nou/Global.asax.cs" />
+      <File FileName="Nou/home.aspx.designer.cs" />
+      <File FileName="Nou/style.css" Line="1" Column="1" />
+      <File FileName="Nou/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="Nou/Default.aspx" Line="9" Column="1" />
+      <File FileName="Nou/Web.config" Line="1" Column="1" />
+      <File FileName="Nou/Default.aspx.cs" Line="28" Column="48" />
+      <File FileName="Nou/Global.asax" Line="1" Column="1" />
+      <File FileName="Nou/packages.config" Line="1" Column="1" />
+      <File FileName="Nou.Tests/Test.cs" Line="1" Column="1" />
+      <File FileName="Nou.Tests/packages.config" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Nou" expanded="True">
             <Node name="Nou" expanded="True">
-              <Node name="Packages" expanded="True" />
               <Node name="Default.aspx" expanded="True" />
               <Node name="Global.asax" expanded="True" />
-              <Node name="home.aspx" expanded="True">
-                <Node name="home.aspx.cs" selected="True" />
-              </Node>
+              <Node name="home.aspx" expanded="True" selected="True" />
               <Node name="Register.aspx" expanded="True" />
             </Node>
+            <Node name="Nou.Tests" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

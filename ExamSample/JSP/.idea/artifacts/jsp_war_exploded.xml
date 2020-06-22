@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jsp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/jsp_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="jsp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jsp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.google.code.gson:gson:2.2.4" />
+          <element id="library" level="project" name="com.jwebmp.jpms.jackson.core:jackson-databind:0.67.0.4" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

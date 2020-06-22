@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.jwebmp.jpms.jackson.core:jackson-databind:0.67.0.4" type="repository">
+    <properties maven-id="com.jwebmp.jpms.jackson.core:jackson-databind:0.67.0.4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jwebmp/jpms/jackson/core/jackson-databind/0.67.0.4/jackson-databind-0.67.0.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/jwebmp/jpms/jackson/core/jackson-annotations/0.67.0.4/jackson-annotations-0.67.0.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/jwebmp/jpms/jackson/core/jackson-core/0.67.0.4/jackson-core-0.67.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
